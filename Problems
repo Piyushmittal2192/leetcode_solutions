@@ -1,1 +1,14 @@
 1. Two Sum -> https://codeburst.io/understanding-the-two-sum-problem-9a6428083a7f
+7. Reverse Integer -> 
+class Solution:
+    def reverse(self, x: int) -> int:
+        neg = False
+        if x < 0:
+            a = -1 * int(str(abs(x))[::-1])
+        else:
+            a = int(str(abs(x))[::-1])
+        if a >= -pow(2,31) and a <= pow(2,31) - 1:
+            return a
+        else:
+            return 0
+3. 
